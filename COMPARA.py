@@ -59,7 +59,7 @@ def TRADUCE(txt):
 def TRADUCIR(listadi):  #convierte textos 'PAIS.txt' a ADN, 'TRAD_PAIS.txt'
 
 	for archivo in listadi:
-		print (f'ERROR = {CONST}{archivo}')
+		print (f'CONVIRTIENDO = {CONST}{archivo}')
 		
 		txt = open(f'{CONST}{archivo}','r').read()
 		nombre = archivo[:-4]
@@ -105,17 +105,19 @@ def PASO1():
 
 
 def PASO2():
+	path2= os.getcwd()+'/'+CONSTRAD
+	print (f'PATH = {path2}')
+	
+	
+	listatrad = LISTADOTRAD(path2)
+	print (f' LISTADO TRAD = {listatrad}')
+
 
 	#CREAR_SEQS(listatrad)
-
-	print (f'PATH = {path}')
-
-	listatrad = LISTADOTRAD(path)
-
-	print (f' LISTADO TRAD {listatrad}')
-
-PASO1()
-#PASO2()
+	
+	
+#PASO1()
+PASO2()
 
 
 
