@@ -8,6 +8,12 @@ import pandas as pd
 import numpy as np
 
 
+#CARPETAS ARCHIVOS
+
+CONST='CONSTITUCIONES_TXT/'
+CONSTRAD='CONSTITUCIONES_TRAD/'
+
+
 #crea diccionario desde CODIGOS.xls
 
 BASE = pd.read_excel('CODIGOS.xls') 
@@ -15,6 +21,8 @@ BASEnp= BASE.to_numpy()
 filas,cols = BASEnp.shape
 
 DICC = {' ':'AAA'}
+
+
 
 for fila in range(filas):
 	DICC[BASEnp[fila][0]] = BASEnp[fila][4]
@@ -48,38 +56,26 @@ def TRADUCE(txt):
 	return trad
 
 
-
-
 def TRADUCIR(listadi):  #convierte textos 'PAIS.txt' a ADN, 'TRAD_PAIS.txt'
 
 	for archivo in listadi:
-
-		txt = open(archivo,'r').read()
+		print (f'ERROR = {CONST}{archivo}')
+		
+		txt = open(f'{CONST}{archivo}','r').read()
 		nombre = archivo[:-4]
 
 		trad = TRADUCE(txt)
 
-		salida = open(f'TRAD_{nombre}.txt','w')
+		salida = open(f'{CONSTRAD}TRAD_{nombre}.txt','w')
 
 		salida.write(trad)
 		print (f'HECHO {nombre}')
-
-
-
-path= os.getcwd()+'/'
-listadi = LISTADO(path)
-
-#TRADUCIR(listadi)
-
-#-----------------
-
 
 
 def LISTADOTRAD(path):    #entrega lista de 'TRAD_PAIS.txt'
 	return [obj for obj in listdir(path) if isfile(path + obj) and obj[-4:]=='.txt' and obj[:4] == 'TRAD']
 
 
-listatrad=LISTADOTRAD(path)
 
 
 def CREAR_SEQS(listatrad):
@@ -96,8 +92,31 @@ def CREAR_SEQS(listatrad):
 	salida.write(textoSEQ)
 	
 	
-	
-CREAR_SEQS(listatrad)
+
+def PASO1():
+		
+	path1= os.getcwd()+'/'+CONST
+
+	print (path1)
+	listadi = LISTADO(path1)
+
+	print (listadi)
+	TRADUCIR(listadi)
+
+
+def PASO2():
+
+	#CREAR_SEQS(listatrad)
+
+	print (f'PATH = {path}')
+
+	listatrad = LISTADOTRAD(path)
+
+	print (f' LISTADO TRAD {listatrad}')
+
+PASO1()
+#PASO2()
+
 
 
 print ('TERMINE')
