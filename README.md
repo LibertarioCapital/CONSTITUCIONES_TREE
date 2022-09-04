@@ -1,14 +1,21 @@
 # CONSTITUCIONES_TREE
-Comparación de Textos Constitucionales 
-Comparando Constituciones Con Python.
+Comparación de Textos Constitucionales
+
+Comparando Constituciones Con Python
+
 Este video muestra un estudio comparando los textos Constitucionales utilizando Python.
+
+VIDEO PARTE 1: https://www.youtube.com/watch?v=t4MYhAEOHPo&t=2s
+VIDEO PARTE 2: https://www.youtube.com/watch?v=D5avghNiZIE&t=4989s
+
+
 Se descargaron los textos de 190 Constituciones desde 
-https://www.bcn.cl/procesoconstituyen...
+(https://www.bcn.cl/procesoconstituyente/comparadordeconstituciones/constituciones)
 
 Se contó el numero de palabras coincidentes de a pares, todas X todas, 
 obteniendo (18145 pares = 190*191/2) 
 Se ordena de mayor a menor los pares de mayor coincidencia, 
-se filtra por : CHILE2021(Constitución Actual) , CHILEPROPUESTA(Mamarracho) 
+se filtró por : CHILE2021(Constitución Actual) , CHILEPROPUESTA(Mamarracho) 
 
 RESULTADOS OBTENIDOS:
 4 mayores similitudes obtenidas, por coincidencia de palabras: 
