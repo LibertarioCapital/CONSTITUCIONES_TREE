@@ -6,6 +6,7 @@ Comparando Constituciones Con Python
 Este video muestra un estudio comparando los textos Constitucionales utilizando Python.
 
 VIDEO PARTE 1: https://www.youtube.com/watch?v=t4MYhAEOHPo&t
+
 VIDEO PARTE 2: https://www.youtube.com/watch?v=D5avghNiZIE&t
 
 
