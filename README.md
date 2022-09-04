@@ -20,6 +20,7 @@ se filtró por : CHILE2021(Constitución Actual) , CHILEPROPUESTA2022
 
 RESULTADOS OBTENIDOS: 
 Se muestra en (6:07:00 de parte 2 en youtube)
+
 4 mayores similitudes obtenidas, por coincidencia de palabras: 
 
 Chile Actual 2021 : REINOUNIDO, MEXICO, NUEVAZELANDA, COLOMBIA
