@@ -25,7 +25,7 @@ Se muestra en (6:07:00 de parte 2 en youtube)
 
 Chile Actual 2021 : REINOUNIDO, MEXICO, NUEVAZELANDA, COLOMBIA
 
-Chile Propuesta 2022 (Mamarracho) : VENEZUELA, COLOMBIA, KIRGUISTAN, HONDURAS
+Chile Propuesta 2022 (Mamarracho) : VENEZUELA, KIRGUISTAN, HONDURAS
 
 3 Pares de Constituciones con Mayor Coincidencias:  
 NUEVAZELANDA-REINOUNIDO 
